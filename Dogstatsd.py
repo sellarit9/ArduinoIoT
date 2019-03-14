@@ -152,5 +152,4 @@ void sendGaugeToStatsD(String aMetric, float aVal, String aTags)
   statsd.setTagStyle(TAG_STYLE_DATADOG);
   statsd.begin();
   statsd.gauge(aMetric, aVal, aTags, 1.0);
-  statsd.end();
 }
